@@ -108,7 +108,7 @@ public class Ordeño extends javax.swing.JPanel {
         PantallaInicial.setLayout(PantallaInicialLayout);
         PantallaInicialLayout.setHorizontalGroup(
             PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1401, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PantallaInicialLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -117,7 +117,7 @@ public class Ordeño extends javax.swing.JPanel {
         );
         PantallaInicialLayout.setVerticalGroup(
             PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1046, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
             .addGroup(PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PantallaInicialLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
