@@ -33,6 +33,8 @@ public class Conexion {
        try {
            contacto= DriverManager.getConnection(url, user ,pass);
        System.out.println("la base de datos  ha  sido conectada ");
+         System.out.println("XD ");
+       
        }
            catch(SQLException e){
               
