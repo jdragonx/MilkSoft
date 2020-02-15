@@ -57,12 +57,13 @@ public class Conexion {
            //Recuperacion del tipo de usuario
               
              while (respuesta.next()) 
+                System.out.print("");
                 valCon = respuesta.getString("idsysUser");
                 System.out.print("\n\nResult Get: "+valCon);
   
        }
        catch (SQLException e){
-           JOptionPane.showMessageDialog(null, "Error" + e.getMessage(), "Erro de conexion", JOptionPane.ERROR_MESSAGE);
+           JOptionPane.showMessageDialog(null, "Error" + e.getMessage(), "Error de conexion", JOptionPane.ERROR_MESSAGE);
            
        }
        return valCon;
