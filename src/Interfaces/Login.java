@@ -1,46 +1,44 @@
-
 package Interfaces;
 
 import Conexiones.Conexion;
 import java.sql.Connection;
 import javax.swing.JOptionPane;
 
-
 public class Login extends javax.swing.JFrame {
 
-      Conexion conec;
+    Conexion conec;
 
     public Login() {
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
-        this.conec= new Conexion();
+        this.conec = new Conexion();
     }
 
-    
-     public void iniciar(){
-        String val =  conec.ingLogin( Usuario.getText(), Pass.getText());
-        System.out.print("\nVAL ES: "+val);
-        if(val.matches("1")){
+    public void iniciar() {
+        String val = conec.ingLogin(Usuario.getText(), Pass.getText());
+        System.out.print("\nVAL ES: " + val);
+        if (val.matches("1")) {
             System.out.print("XDDD1");
-        }if(val.matches("2")){
+        }
+        if (val.matches("2")) {
             System.out.print("XDDD2");
-        }if(val.matches("3")){
+        }
+        if (val.matches("3")) {
             System.out.print("XDDD3");
-        }else{
+        } else {
             System.out.print("NO COMPARISON");
         }
-        if(val!=""){
+        if (val != "") {
             this.dispose();
             new Modulo().setVisible(true);
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Te la creiste WE\n", "Error  de conexion", JOptionPane.ERROR_MESSAGE);
         }
         Usuario.setText("");
-            Pass.setText("");
-        
+        Pass.setText("");
+
     }
-    
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -95,13 +93,15 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        //System.exit(0);
+        this.dispose();
+        new Modulo().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
+
         iniciar();
-        
+
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
