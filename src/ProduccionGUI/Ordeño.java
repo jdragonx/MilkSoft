@@ -29,6 +29,8 @@ public class Ordeño extends javax.swing.JPanel {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
+        PantallaInicial = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -91,8 +93,39 @@ public class Ordeño extends javax.swing.JPanel {
         jTabbedPane1.setMaximumSize(new java.awt.Dimension(1000, 750));
         jTabbedPane1.setMinimumSize(new java.awt.Dimension(1000, 750));
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(1012, 750));
+        jTabbedPane1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTabbedPane1MouseClicked(evt);
+            }
+        });
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estampado.jpg"))); // NOI18N
+        jLabel29.setText("jLabel12");
+
+        javax.swing.GroupLayout PantallaInicialLayout = new javax.swing.GroupLayout(PantallaInicial);
+        PantallaInicial.setLayout(PantallaInicialLayout);
+        PantallaInicialLayout.setHorizontalGroup(
+            PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1401, Short.MAX_VALUE)
+            .addGroup(PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PantallaInicialLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel29)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        PantallaInicialLayout.setVerticalGroup(
+            PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1046, Short.MAX_VALUE)
+            .addGroup(PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PantallaInicialLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel29)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jPanel1.add(PantallaInicial, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 850));
 
         jLabel1.setText("Registro de ordeño del ganado");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(338, 97, -1, -1));
@@ -310,8 +343,18 @@ public class Ordeño extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jTabbedPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane1MouseClicked
+        // TODO add your handling code here:
+        if (jTabbedPane1.getSelectedIndex() == 0 && jPanel1.getX() > evt.getX() && 31 > evt.getY()) {
+            PantallaInicial.setVisible(false);
+        } else if (jTabbedPane1.getSelectedIndex() != 0){
+            PantallaInicial.setVisible(false);
+        }
+    }//GEN-LAST:event_jTabbedPane1MouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel PantallaInicial;
     private com.github.lgooddatepicker.components.CalendarPanel calendarPanel1;
     private com.github.lgooddatepicker.components.CalendarPanel calendarPanel2;
     private com.github.lgooddatepicker.components.DatePicker datePicker2;
@@ -336,6 +379,7 @@ public class Ordeño extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
