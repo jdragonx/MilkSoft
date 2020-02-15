@@ -111,6 +111,11 @@ public class Ganado extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1100, 850));
 
         jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
+        jTabbedPane1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTabbedPane1MouseClicked(evt);
+            }
+        });
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -539,6 +544,15 @@ public class Ganado extends javax.swing.JPanel {
 
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTabbedPane1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTabbedPane1MouseClicked
+        // TODO add your handling code here:
+        if (jTabbedPane1.getSelectedIndex() == 0 && jPanel1.getX() > evt.getX() && 31 > evt.getY()) {
+            PantallaInicial.setVisible(false);
+        } else if (jTabbedPane1.getSelectedIndex() != 0){
+            PantallaInicial.setVisible(false);
+        }
+    }//GEN-LAST:event_jTabbedPane1MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
