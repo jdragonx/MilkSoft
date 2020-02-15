@@ -36,6 +36,8 @@ public class Ganado extends javax.swing.JPanel {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
+        PantallaInicial = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -44,9 +46,9 @@ public class Ganado extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        Sexo = new javax.swing.JComboBox<String>();
+        Sexo = new javax.swing.JComboBox<>();
         Raza = new javax.swing.JTextField();
-        Salud = new javax.swing.JComboBox<String>();
+        Salud = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel8 = new javax.swing.JLabel();
@@ -57,18 +59,18 @@ public class Ganado extends javax.swing.JPanel {
         jLabel12 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jTextField5 = new javax.swing.JTextField();
-        jComboBox3 = new javax.swing.JComboBox<String>();
+        jComboBox3 = new javax.swing.JComboBox<>();
         jLabel13 = new javax.swing.JLabel();
         datePicker2 = new com.github.lgooddatepicker.components.DatePicker();
         jLabel14 = new javax.swing.JLabel();
         jTextField6 = new javax.swing.JTextField();
-        jComboBox4 = new javax.swing.JComboBox<String>();
+        jComboBox4 = new javax.swing.JComboBox<>();
         jButton3 = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<String>();
+        jComboBox5 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton4 = new javax.swing.JButton();
@@ -78,19 +80,19 @@ public class Ganado extends javax.swing.JPanel {
         jLabel18 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<String>();
+        jList1 = new javax.swing.JList<>();
         jLabel19 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox<String>();
+        jComboBox6 = new javax.swing.JComboBox<>();
         jButton5 = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel21 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jComboBox7 = new javax.swing.JComboBox<String>();
+        jComboBox7 = new javax.swing.JComboBox<>();
         jLabel22 = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jList3 = new javax.swing.JList<String>();
+        jList3 = new javax.swing.JList<>();
         datePicker3 = new com.github.lgooddatepicker.components.DatePicker();
         jLabel48 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
@@ -111,6 +113,32 @@ public class Ganado extends javax.swing.JPanel {
         jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/estampado.jpg"))); // NOI18N
+        jLabel29.setText("jLabel12");
+
+        javax.swing.GroupLayout PantallaInicialLayout = new javax.swing.GroupLayout(PantallaInicial);
+        PantallaInicial.setLayout(PantallaInicialLayout);
+        PantallaInicialLayout.setHorizontalGroup(
+            PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1401, Short.MAX_VALUE)
+            .addGroup(PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PantallaInicialLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel29)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        PantallaInicialLayout.setVerticalGroup(
+            PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1046, Short.MAX_VALUE)
+            .addGroup(PantallaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PantallaInicialLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jLabel29)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jPanel1.add(PantallaInicial, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 850));
 
         jLabel1.setText("Registro de ganado");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(303, 11, -1, -1));
@@ -141,11 +169,11 @@ public class Ganado extends javax.swing.JPanel {
         jLabel7.setText("Estado de salud");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 242, -1, -1));
 
-        Sexo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "M", "F" }));
+        Sexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "M", "F" }));
         jPanel1.add(Sexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 125, 169, -1));
         jPanel1.add(Raza, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 163, 169, -1));
 
-        Salud.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Sano", "Enfermo medio", "Enfermo grave" }));
+        Salud.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sano", "Enfermo medio", "Enfermo grave" }));
         jPanel1.add(Salud, new org.netbeans.lib.awtextra.AbsoluteConstraints(344, 239, 169, -1));
 
         jButton1.setText("Registrar");
@@ -183,7 +211,7 @@ public class Ganado extends javax.swing.JPanel {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(433, 632, -1, -1));
         jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(343, 396, 169, -1));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Sano", "Enfermo medio", "Enfermo grave" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sano", "Enfermo medio", "Enfermo grave" }));
         jPanel1.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(343, 594, 169, -1));
 
         jLabel13.setText("Arete");
@@ -194,7 +222,7 @@ public class Ganado extends javax.swing.JPanel {
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(304, 322, -1, -1));
         jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(343, 518, 169, -1));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "M", "F" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "M", "F" }));
         jPanel1.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(343, 480, 169, -1));
 
         jButton3.setText("Buscar");
@@ -214,7 +242,7 @@ public class Ganado extends javax.swing.JPanel {
         jLabel16.setText("Tipo de consulta");
         jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 46, -1, -1));
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Todo", "Con vida", "Terneros", "Vaconas", "Preñadas", "En producción", "Secas" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todo", "Con vida", "Terneros", "Vaconas", "Preñadas", "En producción", "Secas" }));
         jPanel3.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 43, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -289,10 +317,10 @@ public class Ganado extends javax.swing.JPanel {
         jPanel4.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 39, -1, -1));
         jPanel4.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 36, 130, -1));
 
-        jList1.setModel(new javax.swing.AbstractListModel() {
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Ganado 1", "Ganado 2", "Ganado 3" };
             public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
+            public String getElementAt(int i) { return strings[i]; }
         });
         jScrollPane2.setViewportView(jList1);
 
@@ -301,7 +329,7 @@ public class Ganado extends javax.swing.JPanel {
         jLabel19.setText("Etapa");
         jPanel4.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 225, -1, -1));
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ternero", "Vacona", "Preñada", "En producción", "Seca" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ternero", "Vacona", "Preñada", "En producción", "Seca" }));
         jPanel4.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 222, 130, -1));
 
         jButton5.setText("Registrar");
@@ -314,7 +342,7 @@ public class Ganado extends javax.swing.JPanel {
         jButton6.setText("Actualizar");
         jPanel4.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 663, -1, -1));
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ternero", "Vacona", "Preñada", "En producción", "Seca" }));
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Ternero", "Vacona", "Preñada", "En producción", "Seca" }));
         jPanel4.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 625, 130, -1));
 
         jLabel22.setText("Etapa");
@@ -326,10 +354,10 @@ public class Ganado extends javax.swing.JPanel {
         jLabel23.setText("Fecha");
         jPanel4.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 430, -1, -1));
 
-        jList3.setModel(new javax.swing.AbstractListModel() {
+        jList3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Ganado 1", "Ganado 2", "Ganado 3" };
             public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
+            public String getElementAt(int i) { return strings[i]; }
         });
         jScrollPane4.setViewportView(jList3);
 
@@ -514,6 +542,7 @@ public class Ganado extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel PantallaInicial;
     private javax.swing.JTextField Raza;
     private javax.swing.JComboBox<String> Salud;
     private javax.swing.JComboBox<String> Sexo;
@@ -553,6 +582,7 @@ public class Ganado extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel46;
