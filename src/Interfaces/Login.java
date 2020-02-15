@@ -20,22 +20,13 @@ public class Login extends javax.swing.JFrame {
     
      public void iniciar(){
         String val =  conec.ingLogin( Usuario.getText(), Pass.getText());
-        if(val=="1"){
-           this.dispose();
-            new Modulo().setVisible(true);
-            
-        }if(val=="2"){
+        System.out.print("\n"+val);
+        if(val!=""){
             this.dispose();
             new Modulo().setVisible(true);
-        }if(val=="3"){
-            this.dispose();
-            new Modulo().setVisible(true);
+        }else{
+            JOptionPane.showMessageDialog(null, "Te la creiste WE\n", "Error  de conexion", JOptionPane.ERROR_MESSAGE);
         }
-        else{
-            JOptionPane.showMessageDialog(null, "LEER SRS PAL MENSAJE"," Sistema ", JOptionPane.ERROR_MESSAGE);
-            }
-        
-        
         Usuario.setText("");
             Pass.setText("");
         

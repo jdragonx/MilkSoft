@@ -65,15 +65,9 @@ public class Conexion {
            JOptionPane.showMessageDialog(null, "Error" + e.getMessage(), "Erro de conexion", JOptionPane.ERROR_MESSAGE);
            
        }
-       
-
-       
        return valCon;
-       
-
    }
    
-   ///////////////////////////
    
     public static ResultSet Consulta (String consulta){
         
