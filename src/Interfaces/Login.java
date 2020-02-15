@@ -21,6 +21,13 @@ public class Login extends javax.swing.JFrame {
      public void iniciar(){
         String val =  conec.ingLogin( Usuario.getText(), Pass.getText());
         System.out.print("\n"+val);
+        if(val=="1"){
+            System.out.print("XDDD1");
+        }if(val=="2"){
+            System.out.print("XDDD2");
+        }if(val=="3"){
+            System.out.print("XDDD3");
+        }
         if(val!=""){
             this.dispose();
             new Modulo().setVisible(true);
