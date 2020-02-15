@@ -33,7 +33,7 @@ public class Conexion {
        try {
            contacto= DriverManager.getConnection(url, user ,pass);
        System.out.println("la base de datos  ha  sido conectada ");
-       JOptionPane.showMessageDialog(null, " Bienvenido a MilkSoft");
+       JOptionPane.showMessageDialog(null, " Bienvenido a MilkSoft ddsdsd");
        }
            catch(SQLException e){
               
