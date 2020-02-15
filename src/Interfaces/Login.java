@@ -20,13 +20,15 @@ public class Login extends javax.swing.JFrame {
     
      public void iniciar(){
         String val =  conec.ingLogin( Usuario.getText(), Pass.getText());
-        System.out.print("\n"+val);
-        if(val=="1"){
+        System.out.print("\nVAL ES: "+val);
+        if(val.matches("1")){
             System.out.print("XDDD1");
-        }if(val=="2"){
+        }if(val.matches("2")){
             System.out.print("XDDD2");
-        }if(val=="3"){
+        }if(val.matches("3")){
             System.out.print("XDDD3");
+        }else{
+            System.out.print("NO COMPARISON");
         }
         if(val!=""){
             this.dispose();
